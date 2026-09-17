@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99e
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: manuscript.aux
+Reallocating 'name_of_file' (item size: 1) to 16 items.
+Reallocating 'name_of_file' (item size: 1) to 11 items.
+Reallocating 'name_of_file' (item size: 1) to 10 items.
+The style file: aipnum4-2.bst
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: manuscriptNotes.bib
+Database file #2: references.bib
+Warning--jnrlst (dependency: not reversed) set 1
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 9000 items.
+aipnum4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+Control: key (0) 
+Control: author (8) initials jnrlst
+Control: editor formatted (1) identically to author
+Control: production of article title (-1) disabled
+Control: page (0) single
+Control: year (1) truncated
+Control: production of eprint (0) enabled
+You've used 2 entries,
+            6039 wiz_defined-function locations,
+            1631 strings with 15091 characters,
+and the built_in function-call counts, 1564 in all, are:
+= -- 106
+> -- 23
+< -- 7
++ -- 12
+- -- 6
+* -- 241
+:= -- 192
+add.period$ -- 4
+call.type$ -- 2
+change.case$ -- 12
+chr.to.int$ -- 1
+cite$ -- 2
+duplicate$ -- 136
+empty$ -- 87
+format.name$ -- 10
+if$ -- 252
+int.to.chr$ -- 2
+int.to.str$ -- 11
+missing$ -- 12
+newline$ -- 58
+num.names$ -- 6
+pop$ -- 62
+preamble$ -- 1
+purify$ -- 8
+quote$ -- 0
+skip$ -- 46
+stack$ -- 0
+substring$ -- 30
+swap$ -- 126
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 8
+type$ -- 24
+warning$ -- 1
+while$ -- 6
+width$ -- 0
+write$ -- 68
+(There was 1 warning)
