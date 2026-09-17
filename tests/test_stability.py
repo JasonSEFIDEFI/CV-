@@ -43,8 +43,10 @@ def test_non_intersection_negative_displacement_rejected() -> None:
 def test_negative_tolerance_rejected_for_stability_predicates() -> None:
     """Negative tolerance values should be rejected by both predicates."""
 
-    with pytest.raises(ValueError, match="tolerance must be non-negative"):
+    with pytest.raises(ValueError, match="tolerance must be positive"):
         is_metric_compatible_affine_connection([0.0], tolerance=-1e-9)
+    with pytest.raises(ValueError, match="tolerance must be positive"):
+        is_metric_compatible_affine_connection([0.0], tolerance=0.0)
 
     with pytest.raises(ValueError, match="stability_tolerance must be non-negative"):
         evaluate_non_intersection_tolerance(0.01, stability_tolerance=-0.1)
@@ -94,6 +96,13 @@ def test_initialize_surface_and_displacement_success_paths() -> None:
     )
     assert displacement["displacement"] == pytest.approx(0.5)
     assert displacement["relative_height"] == pytest.approx(1.0)
+
+
+def test_geometric_stabilizer_normalization_success_path() -> None:
+    """Geometric stabilizer score should normalize by the curvature limit."""
+
+    score = evaluate_geometric_stabilizers([0.2, -0.3, 0.1], curvature_limit=2.0)
+    assert score == pytest.approx(0.3)
 
 
 def test_analyze_warp_residual_geometry_contract() -> None:

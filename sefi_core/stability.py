@@ -114,8 +114,8 @@ def is_metric_compatible_affine_connection(
     all gradient components remaining within a symmetric tolerance window.
     """
 
-    if tolerance < 0:
-        raise ValueError("tolerance must be non-negative.")
+    if tolerance <= 0:
+        raise ValueError("tolerance must be positive.")
     return all(abs(component) <= tolerance for component in covariant_metric_gradient)
 
 
