@@ -12,8 +12,8 @@ from .stability import (
 __all__ = [
     "analyze_warp_residual_geometry",
     "evaluate_geometric_stabilizers",
-    "evaluate_non_intersection_tolerance",
     "initialize_stability_surface",
+    "evaluate_non_intersection_tolerance",
     "is_metric_compatible_affine_connection",
     "track_syndrome_vector_displacement",
 ]

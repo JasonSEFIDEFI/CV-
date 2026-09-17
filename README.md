@@ -50,3 +50,6 @@ Validation is supplied through `pytest` tests that check:
 
 - Metric-compatible affine connection behavior.
 - Non-intersection stability-tolerance logic.
+- Curvature/manifold boundary validation and geometric stabilizer contracts.
+- Vector dimensionality mismatch handling for syndrome displacement tracking.
+- Success-path initialization/displacement outputs and warp-residual summaries.
