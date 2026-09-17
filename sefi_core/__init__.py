@@ -1,6 +1,9 @@
 """Core SEFI simulation interfaces for geometric stability analysis."""
 
 from .stability import (
+    DisplacementMetrics,
+    StabilitySurface,
+    WarpResidualSummary,
     analyze_warp_residual_geometry,
     evaluate_geometric_stabilizers,
     evaluate_non_intersection_tolerance,
@@ -10,6 +13,9 @@ from .stability import (
 )
 
 __all__ = [
+    "DisplacementMetrics",
+    "StabilitySurface",
+    "WarpResidualSummary",
     "analyze_warp_residual_geometry",
     "evaluate_geometric_stabilizers",
     "initialize_stability_surface",
