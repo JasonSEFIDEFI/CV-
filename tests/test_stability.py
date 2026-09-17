@@ -60,3 +60,13 @@ def test_curvature_limit_and_manifold_height_input_contracts() -> None:
 
     with pytest.raises(ValueError, match="manifold_height must be positive"):
         track_syndrome_vector_displacement([0.0], [0.1], manifold_height=-1.0)
+
+    with pytest.raises(ValueError, match="photonic_mode_count must be at least 1"):
+        initialize_stability_surface(photonic_mode_count=0)
+
+
+def test_track_syndrome_vector_displacement_dimension_mismatch() -> None:
+    """Displacement tracking should reject vectors with different dimensions."""
+
+    with pytest.raises(ValueError, match="Vectors must share dimensionality"):
+        track_syndrome_vector_displacement([0.0, 0.1], [0.0], manifold_height=1.0)

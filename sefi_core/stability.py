@@ -30,6 +30,8 @@ def initialize_stability_surface(
         raise ValueError("curvature_limit must be non-negative.")
     if manifold_height <= 0:
         raise ValueError("manifold_height must be positive.")
+    if photonic_mode_count < 1:
+        raise ValueError("photonic_mode_count must be at least 1.")
 
     return {
         "curvature_limit": float(curvature_limit),
