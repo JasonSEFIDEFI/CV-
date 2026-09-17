@@ -70,14 +70,14 @@ def track_syndrome_vector_displacement(
     has lifted from the DEFI reference sheet under curvature constraints.
     """
 
+    if manifold_height <= 0:
+        raise ValueError("manifold_height must be positive.")
     if len(baseline_vector) != len(shifted_vector):
         raise ValueError("Vectors must share dimensionality.")
     squared_delta = sum(
         (shifted - base) ** 2 for base, shifted in zip(baseline_vector, shifted_vector)
     )
     displacement = sqrt(squared_delta)
-    if manifold_height <= 0:
-        raise ValueError("manifold_height must be positive.")
     return {
         "displacement": displacement,
         "relative_height": displacement / manifold_height,
