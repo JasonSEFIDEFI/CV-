@@ -54,12 +54,16 @@ def test_curvature_limit_and_manifold_height_input_contracts() -> None:
 
     with pytest.raises(ValueError, match="curvature_limit must be positive"):
         evaluate_geometric_stabilizers([0.1, 0.2], curvature_limit=-1.0)
+    with pytest.raises(ValueError, match="curvature_limit must be positive"):
+        evaluate_geometric_stabilizers([0.1, 0.2], curvature_limit=0.0)
 
     with pytest.raises(ValueError, match="curvature_limit must be non-negative"):
         initialize_stability_surface(curvature_limit=-0.1)
 
     with pytest.raises(ValueError, match="manifold_height must be positive"):
         track_syndrome_vector_displacement([0.0], [0.1], manifold_height=-1.0)
+    with pytest.raises(ValueError, match="manifold_height must be positive"):
+        track_syndrome_vector_displacement([0.0], [0.1], manifold_height=0.0)
 
     with pytest.raises(ValueError, match="photonic_mode_count must be at least 1"):
         initialize_stability_surface(photonic_mode_count=0)
