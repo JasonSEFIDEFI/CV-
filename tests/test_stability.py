@@ -103,6 +103,7 @@ def test_analyze_warp_residual_geometry_contract() -> None:
         "mean_residual": 0.0,
         "max_residual": 0.0,
     }
-    assert analyze_warp_residual_geometry([0.01, -0.03, 0.02]) == pytest.approx(
-        {"mean_residual": 0.02, "max_residual": 0.03}
-    )
+    signed_result = analyze_warp_residual_geometry([0.01, -0.03, 0.02])
+    positive_result = analyze_warp_residual_geometry([0.01, 0.03, 0.02])
+    assert signed_result == pytest.approx({"mean_residual": 0.02, "max_residual": 0.03})
+    assert signed_result == positive_result
