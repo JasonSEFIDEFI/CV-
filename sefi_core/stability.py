@@ -107,6 +107,8 @@ def is_metric_compatible_affine_connection(
     all gradient components remaining within a symmetric tolerance window.
     """
 
+    if tolerance < 0:
+        raise ValueError("tolerance must be non-negative.")
     return all(abs(component) <= tolerance for component in covariant_metric_gradient)
 
 
@@ -121,4 +123,8 @@ def evaluate_non_intersection_tolerance(
     safe manifold separation assumptions used in preliminary DEFI workflows.
     """
 
+    if displacement < 0:
+        raise ValueError("displacement must be non-negative.")
+    if stability_tolerance < 0:
+        raise ValueError("stability_tolerance must be non-negative.")
     return displacement <= stability_tolerance
