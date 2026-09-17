@@ -3,8 +3,11 @@
 import pytest
 
 from sefi_core.stability import (
+    evaluate_geometric_stabilizers,
     evaluate_non_intersection_tolerance,
+    initialize_stability_surface,
     is_metric_compatible_affine_connection,
+    track_syndrome_vector_displacement,
 )
 
 
@@ -44,3 +47,16 @@ def test_negative_tolerance_rejected_for_stability_predicates() -> None:
 
     with pytest.raises(ValueError, match="stability_tolerance must be non-negative"):
         evaluate_non_intersection_tolerance(0.01, stability_tolerance=-0.1)
+
+
+def test_curvature_limit_and_manifold_height_input_contracts() -> None:
+    """Curvature and height constraints should reject invalid negative values."""
+
+    with pytest.raises(ValueError, match="curvature_limit must be positive"):
+        evaluate_geometric_stabilizers([0.1, 0.2], curvature_limit=-1.0)
+
+    with pytest.raises(ValueError, match="curvature_limit must be non-negative"):
+        initialize_stability_surface(curvature_limit=-0.1)
+
+    with pytest.raises(ValueError, match="manifold_height must be positive"):
+        track_syndrome_vector_displacement([0.0], [0.1], manifold_height=-1.0)

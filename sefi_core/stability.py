@@ -26,6 +26,11 @@ def initialize_stability_surface(
     limits enforce tighter phase and amplitude confinement.
     """
 
+    if curvature_limit < 0:
+        raise ValueError("curvature_limit must be non-negative.")
+    if manifold_height <= 0:
+        raise ValueError("manifold_height must be positive.")
+
     return {
         "curvature_limit": float(curvature_limit),
         "manifold_height": float(manifold_height),
@@ -46,9 +51,9 @@ def evaluate_geometric_stabilizers(
     """
 
     magnitude = sum(abs(value) for value in stabilizer_values)
-    if curvature_limit == 0:
-        raise ValueError("curvature_limit must be non-zero.")
-    return magnitude / abs(curvature_limit)
+    if curvature_limit <= 0:
+        raise ValueError("curvature_limit must be positive.")
+    return magnitude / curvature_limit
 
 
 def track_syndrome_vector_displacement(
@@ -69,11 +74,11 @@ def track_syndrome_vector_displacement(
         (shifted - base) ** 2 for base, shifted in zip(baseline_vector, shifted_vector)
     )
     displacement = sqrt(squared_delta)
-    if manifold_height == 0:
-        raise ValueError("manifold_height must be non-zero.")
+    if manifold_height <= 0:
+        raise ValueError("manifold_height must be positive.")
     return {
         "displacement": displacement,
-        "relative_height": displacement / abs(manifold_height),
+        "relative_height": displacement / manifold_height,
     }
 
 
