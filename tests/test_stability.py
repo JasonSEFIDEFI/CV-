@@ -79,8 +79,8 @@ def test_track_syndrome_vector_displacement_dimension_mismatch() -> None:
         track_syndrome_vector_displacement([0.0, 0.1], [0.0], manifold_height=1.0)
 
 
-def test_initialize_surface_and_displacement_success_paths() -> None:
-    """Core success paths should return expected stability descriptors."""
+def test_initialize_surface_success_path() -> None:
+    """Surface initialization should return the expected typed descriptor."""
 
     surface = initialize_stability_surface(curvature_limit=0.0, manifold_height=2.0, photonic_mode_count=3)
     assert surface == {
@@ -88,6 +88,10 @@ def test_initialize_surface_and_displacement_success_paths() -> None:
         "manifold_height": 2.0,
         "photonic_mode_count": 3,
     }
+
+
+def test_track_syndrome_vector_displacement_success_path() -> None:
+    """Displacement tracking should compute expected geometric metrics."""
 
     displacement = track_syndrome_vector_displacement(
         [0.0, 0.0],

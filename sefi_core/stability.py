@@ -9,14 +9,36 @@ higher-fidelity differential geometry and QEC-aware solvers.
 from __future__ import annotations
 
 from math import sqrt
-from typing import Iterable, Sequence
+from typing import Iterable, Sequence, TypedDict
+
+
+class StabilitySurface(TypedDict):
+    """Typed stability-surface descriptor contract."""
+
+    curvature_limit: float
+    manifold_height: float
+    photonic_mode_count: int
+
+
+class DisplacementMetrics(TypedDict):
+    """Typed displacement metrics contract."""
+
+    displacement: float
+    relative_height: float
+
+
+class WarpResidualSummary(TypedDict):
+    """Typed warp-residual summary contract."""
+
+    mean_residual: float
+    max_residual: float
 
 
 def initialize_stability_surface(
     curvature_limit: float = 1.0,
     manifold_height: float = 1.0,
     photonic_mode_count: int = 3,
-) -> dict:
+) -> StabilitySurface:
     """Build a minimal stability-surface descriptor.
 
     The ``curvature_limit`` represents the maximum local curvature accepted
@@ -62,7 +84,7 @@ def track_syndrome_vector_displacement(
     baseline_vector: Sequence[float],
     shifted_vector: Sequence[float],
     manifold_height: float,
-) -> dict:
+) -> DisplacementMetrics:
     """Measure syndrome displacement above a DEFI manifold.
 
     The Euclidean displacement is evaluated against ``manifold_height`` as a
@@ -86,7 +108,7 @@ def track_syndrome_vector_displacement(
 
 def analyze_warp_residual_geometry(
     warp_residual_components: Iterable[float],
-) -> dict:
+) -> WarpResidualSummary:
     """Provide a basic warp-residual summary.
 
     Warp residuals estimate deviation between expected GWFM-guided trajectories
