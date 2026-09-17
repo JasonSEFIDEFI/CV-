@@ -3,6 +3,7 @@
 import pytest
 
 from sefi_core.stability import (
+    analyze_warp_residual_geometry,
     evaluate_geometric_stabilizers,
     evaluate_non_intersection_tolerance,
     initialize_stability_surface,
@@ -74,3 +75,34 @@ def test_track_syndrome_vector_displacement_dimension_mismatch() -> None:
 
     with pytest.raises(ValueError, match="Vectors must share dimensionality"):
         track_syndrome_vector_displacement([0.0, 0.1], [0.0], manifold_height=1.0)
+
+
+def test_initialize_surface_and_displacement_success_paths() -> None:
+    """Core success paths should return expected stability descriptors."""
+
+    surface = initialize_stability_surface(curvature_limit=0.0, manifold_height=2.0, photonic_mode_count=3)
+    assert surface == {
+        "curvature_limit": 0.0,
+        "manifold_height": 2.0,
+        "photonic_mode_count": 3,
+    }
+
+    displacement = track_syndrome_vector_displacement(
+        [0.0, 0.0],
+        [0.3, 0.4],
+        manifold_height=0.5,
+    )
+    assert displacement["displacement"] == pytest.approx(0.5)
+    assert displacement["relative_height"] == pytest.approx(1.0)
+
+
+def test_analyze_warp_residual_geometry_contract() -> None:
+    """Warp-residual analysis should handle empty and populated input."""
+
+    assert analyze_warp_residual_geometry([]) == {
+        "mean_residual": 0.0,
+        "max_residual": 0.0,
+    }
+    assert analyze_warp_residual_geometry([0.01, -0.03, 0.02]) == pytest.approx(
+        {"mean_residual": 0.02, "max_residual": 0.03}
+    )
