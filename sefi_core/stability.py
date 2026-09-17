@@ -52,9 +52,9 @@ def evaluate_geometric_stabilizers(
     above ``1.0`` suggest boundary pressure requiring manifold correction.
     """
 
-    magnitude = sum(abs(value) for value in stabilizer_values)
     if curvature_limit <= 0:
         raise ValueError("curvature_limit must be positive.")
+    magnitude = sum(abs(value) for value in stabilizer_values)
     return magnitude / curvature_limit
 
 
