@@ -1,0 +1,289 @@
+%apsrev4-2.bst 2019-01-14 (MD) hand-edited version of apsrev4-1.bst
+%Control: key (0)
+%Control: author (72) initials jnrlst
+%Control: editor formatted (1) identically to author
+%Control: production of article title (-1) disabled
+%Control: page (0) single
+%Control: year (1) truncated
+%Control: production of eprint (0) enabled
+\begin{thebibliography}{37}%
+\makeatletter
+\providecommand \@ifxundefined [1]{%
+ \@ifx{#1\undefined}
+}%
+\providecommand \@ifnum [1]{%
+ \ifnum #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \@ifx [1]{%
+ \ifx #1\expandafter \@firstoftwo
+ \else \expandafter \@secondoftwo
+ \fi
+}%
+\providecommand \natexlab [1]{#1}%
+\providecommand \enquote  [1]{``#1''}%
+\providecommand \bibnamefont  [1]{#1}%
+\providecommand \bibfnamefont [1]{#1}%
+\providecommand \citenamefont [1]{#1}%
+\providecommand \href@noop [0]{\@secondoftwo}%
+\providecommand \href [0]{\begingroup \@sanitize@url \@href}%
+\providecommand \@href[1]{\@@startlink{#1}\@@href}%
+\providecommand \@@href[1]{\endgroup#1\@@endlink}%
+\providecommand \@sanitize@url [0]{\catcode `\\12\catcode `\$12\catcode
+  `\&12\catcode `\#12\catcode `\^12\catcode `\_12\catcode `\%12\relax}%
+\providecommand \@@startlink[1]{}%
+\providecommand \@@endlink[0]{}%
+\providecommand \url  [0]{\begingroup\@sanitize@url \@url }%
+\providecommand \@url [1]{\endgroup\@href {#1}{\urlprefix }}%
+\providecommand \urlprefix  [0]{URL }%
+\providecommand \Eprint [0]{\href }%
+\providecommand \doibase [0]{https://doi.org/}%
+\providecommand \selectlanguage [0]{\@gobble}%
+\providecommand \bibinfo  [0]{\@secondoftwo}%
+\providecommand \bibfield  [0]{\@secondoftwo}%
+\providecommand \translation [1]{[#1]}%
+\providecommand \BibitemOpen [0]{}%
+\providecommand \bibitemStop [0]{}%
+\providecommand \bibitemNoStop [0]{.\EOS\space}%
+\providecommand \EOS [0]{\spacefactor3000\relax}%
+\providecommand \BibitemShut  [1]{\csname bibitem#1\endcsname}%
+\let\auto@bib@innerbib\@empty
+%</preamble>
+\bibitem [{\citenamefont {Reed}\ and\ \citenamefont {Simon}(1980)}]{ReedSimon}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Reed}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont {Simon}},\
+  }\href@noop {} {\emph {\bibinfo {title} {Methods of Modern Mathematical
+  Physics, Vol. 1: Functional Analysis}}}\ (\bibinfo  {publisher} {Academic
+  Press},\ \bibinfo {year} {1980})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Stone}(1932)}]{Stone1932}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~H.}\ \bibnamefont
+  {Stone}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Annals
+  of Mathematics}\ }\textbf {\bibinfo {volume} {33}},\ \bibinfo {pages} {643}
+  (\bibinfo {year} {1932})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Nakahara}(2003)}]{Nakahara}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Nakahara}},\ }\href@noop {} {\emph {\bibinfo {title} {Geometry, Topology and
+  Physics}}}\ (\bibinfo  {publisher} {Institute of Physics Publishing},\
+  \bibinfo {year} {2003})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Frankel}(2012)}]{Frankel}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Frankel}},\ }\href@noop {} {\emph {\bibinfo {title} {The Geometry of
+  Physics: An Introduction}}}\ (\bibinfo  {publisher} {Cambridge University
+  Press},\ \bibinfo {year} {2012})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Polyakov}(1987)}]{Polyakov1987}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~M.}\ \bibnamefont
+  {Polyakov}},\ }\href@noop {} {\emph {\bibinfo {title} {Gauge Fields and
+  Strings}}}\ (\bibinfo  {publisher} {Harwood Academic Publishers},\ \bibinfo
+  {year} {1987})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Strassler}(1992)}]{Strassler1992}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~J.}\ \bibnamefont
+  {Strassler}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Nuclear Physics B}\ }\textbf {\bibinfo {volume} {385}},\ \bibinfo {pages}
+  {145} (\bibinfo {year} {1992})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Schubert}(2001)}]{Schubert2001}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.}~\bibnamefont
+  {Schubert}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physics Reports}\ }\textbf {\bibinfo {volume} {355}},\ \bibinfo {pages} {73}
+  (\bibinfo {year} {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Courant}\ and\ \citenamefont
+  {Hilbert}(1989)}]{CourantHilbert}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.}~\bibnamefont
+  {Courant}}\ and\ \bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Hilbert}},\ }\href@noop {} {\emph {\bibinfo {title} {Methods of Mathematical
+  Physics, Vol. 2}}}\ (\bibinfo  {publisher} {Wiley-Interscience},\ \bibinfo
+  {year} {1989})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Arnold}(1989)}]{ArnoldMechanics}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.~I.}\ \bibnamefont
+  {Arnold}},\ }\href@noop {} {\emph {\bibinfo {title} {Mathematical Methods of
+  Classical Mechanics}}}\ (\bibinfo  {publisher} {Springer},\ \bibinfo {year}
+  {1989})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dutton}(2026{\natexlab{a}})}]{DuttonDEFI2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Dutton}}} (\bibinfo {year} {2026}{\natexlab{a}}),\ \bibinfo {note}
+  {submitted manuscript}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Marsden}\ and\ \citenamefont
+  {West}(2001)}]{MarsdenWest}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~E.}\ \bibnamefont
+  {Marsden}}\ and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {West}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Acta Numerica}\
+  }\textbf {\bibinfo {volume} {10}},\ \bibinfo {pages} {357} (\bibinfo {year}
+  {2001})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Rosenberg}(1997)}]{RosenbergLaplace}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Rosenberg}},\ }\href@noop {} {\emph {\bibinfo {title} {The Laplacian on a
+  Riemannian Manifold}}}\ (\bibinfo  {publisher} {Cambridge University Press},\
+  \bibinfo {year} {1997})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Helffer}(1988)}]{Helffer}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Helffer}},\ }\href@noop {} {\emph {\bibinfo {title} {Semi-Classical Analysis
+  for the Schrödinger Operator and Applications}}}\ (\bibinfo  {publisher}
+  {Springer},\ \bibinfo {year} {1988})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Weinberg}(1995)}]{WeinbergQFT1}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Weinberg}},\ }\href@noop {} {\emph {\bibinfo {title} {The Quantum Theory of
+  Fields, Vol. 1: Foundations}}}\ (\bibinfo  {publisher} {Cambridge University
+  Press},\ \bibinfo {year} {1995})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Peskin}\ and\ \citenamefont
+  {Schroeder}(1995)}]{PeskinSchroeder}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~E.}\ \bibnamefont
+  {Peskin}}\ and\ \bibinfo {author} {\bibfnamefont {D.~V.}\ \bibnamefont
+  {Schroeder}},\ }\href@noop {} {\emph {\bibinfo {title} {An Introduction to
+  Quantum Field Theory}}}\ (\bibinfo  {publisher} {Westview Press},\ \bibinfo
+  {year} {1995})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hirsch}\ \emph {et~al.}(1977)\citenamefont {Hirsch},
+  \citenamefont {Pugh},\ and\ \citenamefont {Shub}}]{HirschPughShub}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~W.}\ \bibnamefont
+  {Hirsch}}, \bibinfo {author} {\bibfnamefont {C.~C.}\ \bibnamefont {Pugh}},\
+  and\ \bibinfo {author} {\bibfnamefont {M.}~\bibnamefont {Shub}},\ }\href@noop
+  {} {\emph {\bibinfo {title} {Invariant Manifolds}}}\ (\bibinfo  {publisher}
+  {Springer},\ \bibinfo {year} {1977})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Katok}\ and\ \citenamefont
+  {Hasselblatt}(1995)}]{KatokHasselblatt}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.}~\bibnamefont
+  {Katok}}\ and\ \bibinfo {author} {\bibfnamefont {B.}~\bibnamefont
+  {Hasselblatt}},\ }\href@noop {} {\emph {\bibinfo {title} {Introduction to the
+  Modern Theory of Dynamical Systems}}}\ (\bibinfo  {publisher} {Cambridge
+  University Press},\ \bibinfo {year} {1995})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont
+  {Dutton}(2026{\natexlab{b}})}]{DuttonElectronField2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Dutton}}} (\bibinfo {year} {2026}{\natexlab{b}}),\ \bibinfo {note}
+  {unpublished manuscript}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dutton}(2026{\natexlab{c}})}]{DuttonSEFI2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Dutton}}} (\bibinfo {year} {2026}{\natexlab{c}}),\ \bibinfo {note}
+  {unpublished manuscript}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dutton}(2026{\natexlab{d}})}]{DuttonSEFISpace2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Dutton}}} (\bibinfo {year} {2026}{\natexlab{d}}),\ \bibinfo {note}
+  {submitted manuscript}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {do~Carmo}(1992)}]{doCarmo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.~P.}\ \bibnamefont
+  {do~Carmo}},\ }\href@noop {} {\emph {\bibinfo {title} {Riemannian
+  Geometry}}}\ (\bibinfo  {publisher} {Birkhäuser},\ \bibinfo {year}
+  {1992})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Kato}(1995)}]{KatoPerturbation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {T.}~\bibnamefont
+  {Kato}},\ }\href@noop {} {\emph {\bibinfo {title} {Perturbation Theory for
+  Linear Operators}}}\ (\bibinfo  {publisher} {Springer},\ \bibinfo {year}
+  {1995})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Gottesman}(1997)}]{GottesmanQEC}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {D.}~\bibnamefont
+  {Gottesman}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {arXiv preprint quant-ph/9705052}\ } (\bibinfo {year} {1997})}\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Preskill}(2018)}]{PreskillQEC}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.}~\bibnamefont
+  {Preskill}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Quantum}\ }\textbf {\bibinfo {volume} {2}},\ \bibinfo {pages} {79} (\bibinfo
+  {year} {2018})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dutton}(2026{\natexlab{e}})}]{DuttonQEC2026}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {J.~D.}\ \bibnamefont
+  {Dutton}}} (\bibinfo {year} {2026}{\natexlab{e}}),\ \bibinfo {note}
+  {submitted manuscript}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Noh}\ and\ \citenamefont
+  {Girvin}(2024)}]{NohGirvinQEC}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {K.}~\bibnamefont
+  {Noh}}\ and\ \bibinfo {author} {\bibfnamefont {S.~M.}\ \bibnamefont
+  {Girvin}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review Letters}\ }\textbf {\bibinfo {volume} {132}},\ \bibinfo
+  {pages} {050602} (\bibinfo {year} {2024})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Hong}\ and\ \citenamefont
+  {Mandel}(1986)}]{SPDCReview}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {C.~K.}\ \bibnamefont
+  {Hong}}\ and\ \bibinfo {author} {\bibfnamefont {L.}~\bibnamefont {Mandel}},\
+  }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical Review
+  Letters}\ }\textbf {\bibinfo {volume} {56}},\ \bibinfo {pages} {58} (\bibinfo
+  {year} {1986})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Born}\ and\ \citenamefont {Wolf}(1999)}]{BornWolf}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {M.}~\bibnamefont
+  {Born}}\ and\ \bibinfo {author} {\bibfnamefont {E.}~\bibnamefont {Wolf}},\
+  }\href@noop {} {\emph {\bibinfo {title} {Principles of Optics}}}\ (\bibinfo
+  {publisher} {Cambridge University Press},\ \bibinfo {year}
+  {1999})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Milburn}\ and\ \citenamefont
+  {Walls}(1983)}]{QNDReview}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {G.~J.}\ \bibnamefont
+  {Milburn}}\ and\ \bibinfo {author} {\bibfnamefont {D.~F.}\ \bibnamefont
+  {Walls}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review A}\ }\textbf {\bibinfo {volume} {28}},\ \bibinfo {pages}
+  {2065} (\bibinfo {year} {1983})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Weinberg}(2008)}]{WeinbergCosmo}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Weinberg}},\ }\href@noop {} {\emph {\bibinfo {title} {Cosmology}}}\
+  (\bibinfo  {publisher} {Oxford University Press},\ \bibinfo {year}
+  {2008})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Dodelson}(2003)}]{Dodelson}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {S.}~\bibnamefont
+  {Dodelson}},\ }\href@noop {} {\emph {\bibinfo {title} {Modern Cosmology}}}\
+  (\bibinfo  {publisher} {Academic Press},\ \bibinfo {year} {2003})\BibitemShut
+  {NoStop}%
+\bibitem [{\citenamefont {Peebles}(1993)}]{Peebles}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {P.~J.~E.}\
+  \bibnamefont {Peebles}},\ }\href@noop {} {\emph {\bibinfo {title} {Principles
+  of Physical Cosmology}}}\ (\bibinfo  {publisher} {Princeton University
+  Press},\ \bibinfo {year} {1993})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Guth}(1981)}]{GuthInflation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~H.}\ \bibnamefont
+  {Guth}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physical
+  Review D}\ }\textbf {\bibinfo {volume} {23}},\ \bibinfo {pages} {347}
+  (\bibinfo {year} {1981})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Linde}(1982)}]{LindeInflation}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {A.~D.}\ \bibnamefont
+  {Linde}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal} {Physics
+  Letters B}\ }\textbf {\bibinfo {volume} {108}},\ \bibinfo {pages} {389}
+  (\bibinfo {year} {1982})}\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Wald}(1984)}]{WaldGR}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~M.}\ \bibnamefont
+  {Wald}},\ }\href@noop {} {\emph {\bibinfo {title} {General Relativity}}}\
+  (\bibinfo  {publisher} {University of Chicago Press},\ \bibinfo {year}
+  {1984})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Mukhanov}(2005)}]{MukhanovBook}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {V.}~\bibnamefont
+  {Mukhanov}},\ }\href@noop {} {\emph {\bibinfo {title} {Physical Foundations
+  of Cosmology}}}\ (\bibinfo  {publisher} {Cambridge University Press},\
+  \bibinfo {year} {2005})\BibitemShut {NoStop}%
+\bibitem [{\citenamefont {Feynman}(1950)}]{Feynman1950}%
+  \BibitemOpen
+  \bibfield  {author} {\bibinfo {author} {\bibfnamefont {R.~P.}\ \bibnamefont
+  {Feynman}},\ }\href@noop {} {\bibfield  {journal} {\bibinfo  {journal}
+  {Physical Review}\ }\textbf {\bibinfo {volume} {80}},\ \bibinfo {pages} {440}
+  (\bibinfo {year} {1950})}\BibitemShut {NoStop}%
+\end{thebibliography}%
