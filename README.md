@@ -1,5 +1,15 @@
 ⚠️ Recruiter & Technical Reviewer Evaluation Protocol
 
+
+## Research discussion with Hillary — September 2026
+
+- [Printable meeting brief](research_updates/2026-09-23/hillary_research_overview_2026_09_23.pdf)
+- [Editable meeting brief](research_updates/2026-09-23/hillary_research_overview_2026_09_23.md)
+- [Technical research checkpoint and Dr. Ersoy discussion](https://github.com/JasonSEFIDEFI/PhD/tree/main/10_DISSERTATION/research_direction_2026_09_23)
+
+This update states the goal of deriving physical matter while distinguishing it from the present classical field results. It records limited numerical evidence, a rest-state obstruction, and unresolved questions. It does not claim an observed particle, universal gravity, publication acceptance, or independent validation.
+
+
 This repository serves as the master research portfolio, software archive, hardware design workspace, and publication record of Jason Duran Dutton.
 
 To properly evaluate the research, software engineering, and hardware development contained within this workspace, reviewers should follow the reading and verification sequence below. Each document builds on concepts established in the previous work. Following the recommended order provides the necessary context for understanding the mathematical frameworks, software implementations, and physical systems developed throughout this portfolio.
