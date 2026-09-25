@@ -44,6 +44,56 @@ The following roles and scope are documented in the linked resume:
 - **Underground Electrician / Maintenance Foreman — Alpha Natural Resources, 2010–2016.** Electrical maintenance, fault isolation, and compliance responsibilities.
 - **Fabricator, Welder, and Foreman — Dominion Steel, 2016–2018.** Shop and field coordination, quality, and production execution.
 
+- ## 🔧 FIELD ENGINEERING CASE STUDIES
+
+In addition to reviewing manuscripts and software repositories, recruiters and hiring managers are encouraged to review documented field-engineering case studies demonstrating real-world troubleshooting, diagnostics, and production-critical decision making.
+
+### Recommended Reading
+
+#### 14CM15 Tram Failure Case Study
+
+File:
+
+Case Studies/14CM15_Tram_Failure_Case_Study.pdf
+
+Summary:
+
+This case study documents the diagnosis of a production-critical tram failure on a 14CM15 continuous miner while working as an underground electrician.
+
+Topics demonstrated:
+
+- Root Cause Analysis
+- Systems Thinking
+- VFD Diagnostics
+- Industrial Electrical Troubleshooting
+- Diagnostic Test Design
+- Production Downtime Mitigation
+- Risk-Based Decision Making
+
+Key Outcome:
+
+By developing a controlled diagnostic test rather than continuing traditional continuity checks, the root cause was isolated to a failed tram VFD. This rapidly returned equipment to service and minimized production losses.
+
+Why This Matters:
+
+The same methodology used in this troubleshooting event appears throughout my later work in:
+
+- Software Development
+- Simulation Design
+- Research Engineering
+- Computational Modeling
+- SEFI-PY Development
+
+Core Process:
+
+1. Reduce the problem.
+2. Isolate variables.
+3. Design a test.
+4. Follow the evidence.
+5. Verify the result.
+
+This troubleshooting methodology remains central to all of my engineering and research work.
+
 This experience is the basis for the proposed engineering contribution. The prototype does not imply prior hands-on operation of a trapped-ion quantum computer or specific RF instruments. Equipment-specific training and validation would be part of a new role.
 
 The existing resume includes broader research positioning and material prepared for another opportunity; this README provides the focused introduction for the eleQtron conversation.
