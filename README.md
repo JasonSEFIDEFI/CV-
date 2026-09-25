@@ -1,5 +1,14 @@
 # Jason Duran Dutton
 
+## Interactive Double Slit Explorer
+
+[Start here: five-minute educational demo and launch instructions](https://github.com/JasonSEFIDEFI/SEFI-PY/tree/main/SEFI-PY%20Evolution/sim/double_slit_explorer).
+
+Built for curious non-specialists: explore quantum interference, quantum fields, and the proposed GWFM, SEFI and DEFI perspectives through animated detections, adjustable slit geometry, an observation slider, identity cards, and coupled geometric illustrations. This demonstrates scientific software development and communication while keeping established physics separate from research interpretations.
+
+Run locally with `npm install` and `npm run dev` in the explorer directory. The repository link contains source and instructions; it is not a publicly hosted live app. [Scientific assumptions](https://github.com/JasonSEFIDEFI/SEFI-PY/blob/main/SEFI-PY%20Evolution/sim/double_slit_explorer/docs/PHYSICS.md) · [Executed validation and remaining checks](https://github.com/JasonSEFIDEFI/SEFI-PY/blob/main/SEFI-PY%20Evolution/sim/double_slit_explorer/docs/VALIDATION.md).
+
+
 **Field engineering · Electrical integration and commissioning · Scientific software**
 
 My professional foundation is hands-on electrical systems work: controls, sensor interfaces, commissioning, maintenance, fault isolation, and verification. Alongside that work, I develop independent physics research and computational tools. My proposed contribution to a quantum-hardware team is to connect measurements and software with the practical work of making complex equipment understandable and reliable.
