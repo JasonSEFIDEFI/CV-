@@ -1,0 +1,389 @@
+[
+  {
+    "id": "C001",
+    "statement": "A public ORCID record identifies Jason Duran Dutton and links the research repositories.",
+    "verification": "observed",
+    "activity_status": "completed",
+    "sources": [
+      "W004"
+    ],
+    "limitations": "Profile biography and affiliation assertions are self-entered; identity linkage is not an institutional endorsement.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C002",
+    "statement": "Nine public repositories were returned for the JasonSEFIDEFI account.",
+    "verification": "observed",
+    "activity_status": "current_as_of_review",
+    "sources": [
+      "R001"
+    ],
+    "limitations": "Account ownership does not establish sole authorship. Repository creation dates do not establish career start dates.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C003",
+    "statement": "The diagnostic prototype implements synthetic measurements, parameter estimation, alert thresholds, CSV replay and recovery checks.",
+    "verification": "artifact_supported",
+    "activity_status": "completed_artifact",
+    "sources": [
+      "R002",
+      "R003"
+    ],
+    "limitations": "Static source inspection; no physical equipment was tested in this review.",
+    "capability": "K01",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C004",
+    "statement": "The calibration validation record reports eleven passing tests and synthetic benchmark results.",
+    "verification": "reported_validation",
+    "activity_status": "completed_report",
+    "sources": [
+      "R003"
+    ],
+    "limitations": "Archived report was inspected; this review has not independently rerun it. Report explicitly finds no demonstrated SEFI advantage.",
+    "capability": "K02",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C005",
+    "statement": "The tram case study reports an alternate-control-path test that isolated a failed left tram VFD.",
+    "verification": "self_reported",
+    "activity_status": "reported_completed",
+    "sources": [
+      "R004"
+    ],
+    "limitations": "Date, mine, witnesses, work order and diagnostic record absent. Approximate component cost is reported, not an audited saving.",
+    "capability": "K01",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C006",
+    "statement": "MRC deployed a Virginia Tech-derived HHS pilot in Southwest Virginia.",
+    "verification": "organization_corroborated",
+    "activity_status": "historical_completed",
+    "sources": [
+      "W001",
+      "W002"
+    ],
+    "limitations": "Company sources establish project context, not Jason's personal role.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C007",
+    "statement": "MRC reports 1,200 hours of field testing.",
+    "verification": "organization_corroborated",
+    "activity_status": "historical_completed",
+    "sources": [
+      "W002"
+    ],
+    "limitations": "A project total; not personal hours or a personal accomplishment metric.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C008",
+    "statement": "Jason reports pilot plant operation and electrical/mechanical maintenance work in 2015-2016.",
+    "verification": "self_reported",
+    "activity_status": "reported_completed",
+    "sources": [
+      "S061",
+      "S025",
+      "S029"
+    ],
+    "limitations": "Pilot operator versus lead electrician wording needs clarification; employer/site/legal-entity names differ.",
+    "capability": "K03",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C009",
+    "statement": "The supplied wage-statement photograph names Jason D. Dutton and Paramont Contura, LLC for tax year 2025.",
+    "verification": "documentary_supported",
+    "activity_status": "historical_completed",
+    "sources": [
+      "S084"
+    ],
+    "limitations": "Supports a paid employment relationship in that year; copy not issuer-authenticated. Does not establish exact dates, title, hours or duties.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C010",
+    "statement": "Jason reports a later underground electrical role beginning in 2022.",
+    "verification": "conflicted_self_report",
+    "activity_status": "unknown_current_status",
+    "sources": [
+      "S025",
+      "S029"
+    ],
+    "limitations": "Some other resumes say Present; others end in 2025. Payroll photo supports 2025 only.",
+    "capability": "K04",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C011",
+    "statement": "Jason reports Alpha Natural Resources electrical/maintenance foreman work starting around 2010.",
+    "verification": "conflicted_self_report",
+    "activity_status": "reported_completed",
+    "sources": [
+      "S061",
+      "S025",
+      "S029",
+      "W004"
+    ],
+    "limitations": "End years differ (2015/2016); ORCID combines a much broader span. No uninterrupted employment inference.",
+    "capability": "K04",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C012",
+    "statement": "Jason reports Dominion Steel fabrication, welding, foremanship and installation coordination in 2016-2018.",
+    "verification": "self_reported",
+    "activity_status": "reported_completed",
+    "sources": [
+      "S061"
+    ],
+    "limitations": "No employer confirmation or welding qualification record supplied.",
+    "capability": "K05",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C013",
+    "statement": "Jason reports residential construction self-employment beginning in 2018.",
+    "verification": "self_reported",
+    "activity_status": "unknown_current_status",
+    "sources": [
+      "S061"
+    ],
+    "limitations": "Undated Present is not assumed current. Project records and scope remain missing.",
+    "capability": "K05",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C014",
+    "statement": "Jason reports automotive sales at Morgan McClure in 2007-2010.",
+    "verification": "self_reported",
+    "activity_status": "reported_completed",
+    "sources": [
+      "S061"
+    ],
+    "limitations": "Finance responsibilities do not imply formal sales-manager, general-manager or finance-manager titles.",
+    "capability": "K06",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C015",
+    "statement": "Jason reports progression from detailing to inventory/parts/detailing management at Deardoff/Continental Motorcars in 2002-2007.",
+    "verification": "self_reported",
+    "activity_status": "reported_completed",
+    "sources": [
+      "S061"
+    ],
+    "limitations": "Start/end dates and official title require employer records.",
+    "capability": "K06",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C016",
+    "statement": "Jason reports CIS/business coursework in 2002-2004 and mining electrical studies in 2009-2011.",
+    "verification": "self_reported",
+    "activity_status": "reported_completed",
+    "sources": [
+      "S061"
+    ],
+    "limitations": "No degree inferred. Brevard/UCF institutional wording requires school records.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C017",
+    "statement": "Jason reports a Castlewood High School diploma in 2002.",
+    "verification": "self_reported",
+    "activity_status": "reported_completed",
+    "sources": [
+      "S061"
+    ],
+    "limitations": "Diploma/transcript not reviewed.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C018",
+    "statement": "Several mining/electrical/diesel credential numbers are listed in the historical account.",
+    "verification": "self_reported",
+    "activity_status": "validity_unknown",
+    "sources": [
+      "S061"
+    ],
+    "limitations": "Issuer verification and current validity pending; no active credential inferred.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C019",
+    "statement": "Technical manuscripts and submission packages exist in the public repositories.",
+    "verification": "artifact_supported",
+    "activity_status": "completed_artifacts",
+    "sources": [
+      "R005",
+      "R010"
+    ],
+    "limitations": "Existence does not establish originality, correctness, submission receipt, review status or acceptance.",
+    "capability": "K07",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C020",
+    "statement": "Journal submissions began about one month before the user's September 30, 2026 update.",
+    "verification": "dated_self_report",
+    "activity_status": "in_progress",
+    "sources": [
+      "U001"
+    ],
+    "limitations": "Approximate timing; specific submission and status dates need correspondence.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C021",
+    "statement": "Journal publication or acceptance has not been established by the reviewed evidence.",
+    "verification": "not_established",
+    "activity_status": "unknown",
+    "sources": [
+      "R005",
+      "W004"
+    ],
+    "limitations": "Recorded manuscript IDs and preprint entries are not acceptance evidence; absence of evidence is not rejection.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C022",
+    "statement": "The PhD archive supports a proposed PhD by Published Work assessment.",
+    "verification": "first_party_documented",
+    "activity_status": "future_goal",
+    "sources": [
+      "R005"
+    ],
+    "limitations": "No enrollment, awarded doctorate, institutional appointment or supervision is established.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C023",
+    "statement": "The research discussion brief seeks critical review of a classical field model and numerical candidates.",
+    "verification": "first_party_documented",
+    "activity_status": "in_progress",
+    "sources": [
+      "R006",
+      "R009"
+    ],
+    "limitations": "Discussed outcomes are not independently replicated here; a brief addressed to a person does not prove a meeting occurred.",
+    "capability": "K08",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C024",
+    "statement": "Deriving physical matter and a universally experienced geometry are stated research goals.",
+    "verification": "first_party_documented",
+    "activity_status": "future_goal",
+    "sources": [
+      "R006"
+    ],
+    "limitations": "The source explicitly disclaims completed derivations of an electron, electric charge, quantum spin/statistics, universal gravity or Big Bang evolution.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C025",
+    "statement": "The Double Slit Explorer separates standard reference probabilities from proposed interpretive overlays.",
+    "verification": "artifact_supported",
+    "activity_status": "completed_artifact",
+    "sources": [
+      "R008"
+    ],
+    "limitations": "Educational approximation, not independently derived new physics or calibrated apparatus simulation.",
+    "capability": "K09",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C026",
+    "statement": "The QEC repository contains Python modules, test sources, Q# sources and optional Azure integration material.",
+    "verification": "artifact_supported",
+    "activity_status": "completed_artifacts",
+    "sources": [
+      "R007"
+    ],
+    "limitations": "No validated physical quantum error suppression, executed Azure hardware job or enterprise infrastructure deployment established.",
+    "capability": "K10",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C027",
+    "statement": "The acoustic dynamic voxel work describes a proposed ultrasonic/illumination/control architecture.",
+    "verification": "artifact_supported",
+    "activity_status": "proposal",
+    "sources": [
+      "S025",
+      "R010"
+    ],
+    "limitations": "No built hardware, measurements, validated safety envelope or prototype cost evidence established.",
+    "capability": "K11",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C028",
+    "statement": "Jason states the SEFI Research Program began operating August 11, 2024 as a sole proprietorship.",
+    "verification": "self_reported",
+    "activity_status": "reported_started",
+    "sources": [
+      "S057"
+    ],
+    "limitations": "Government registration, incorporation, DBA and active SAM status remain unverified.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C029",
+    "statement": "Supplied photos show a computing workspace, instruments, a mixer and a drum kit.",
+    "verification": "visually_observed",
+    "activity_status": "undated_activity",
+    "sources": [
+      "M001"
+    ],
+    "limitations": "Objects do not prove ownership, performance skill, professional sound engineering or paid work.",
+    "capability": "K12",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C030",
+    "statement": "Public code and research records document work on modeled systems, diagnostic workflows and technical communication.",
+    "verification": "artifact_supported",
+    "activity_status": "current_as_of_review",
+    "sources": [
+      "R002",
+      "R005",
+      "R008",
+      "R009"
+    ],
+    "limitations": "A synthesis of visible artifacts, not a formal job title or a validated scientific breakthrough.",
+    "capability": "K13",
+    "reviewed_on": "2026-09-30"
+  },
+  {
+    "id": "C031",
+    "statement": "Family illness motivated a Florida-to-Virginia relocation; family/home ties motivated declining a later plant role.",
+    "verification": "self_reported",
+    "activity_status": "reported_completed",
+    "sources": [
+      "S061"
+    ],
+    "limitations": "These are the transition explanations actually stated by Jason; other transition motives remain unknown.",
+    "capability": null,
+    "reviewed_on": "2026-09-30"
+  }
+]

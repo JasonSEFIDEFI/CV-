@@ -1,0 +1,79 @@
+{
+  "Publishing-V-Drive-Content": {
+    "name": "Publishing-V-Drive-Content",
+    "status": "error",
+    "error": "HTTP Error 409: Conflict"
+  },
+  "sefi-double-slit-simulator": {
+    "name": "sefi-double-slit-simulator",
+    "url": "https://github.com/JasonSEFIDEFI/sefi-double-slit-simulator",
+    "commit": "d762a5b4672ab74c3c8880eb42ab4e5d496a955a",
+    "commit_date": "2026-09-30T07:58:31Z",
+    "zip_sha256": "85bfd3b630832c9d5c145c62d6a91664902bdf9534628a0b7d4208efabb49bd3",
+    "files": 8,
+    "status": "collected"
+  },
+  "PhD": {
+    "name": "PhD",
+    "url": "https://github.com/JasonSEFIDEFI/PhD",
+    "commit": "f02a81247f8b94bb8fc51487b357b383de12bf16",
+    "commit_date": "2026-09-30T02:55:45Z",
+    "zip_sha256": "88e7e8f84ede6d27ddbab3ba784f187437154591ef251837a517037b6ef01bd4",
+    "files": 21,
+    "status": "collected"
+  },
+  "CV-": {
+    "name": "CV-",
+    "url": "https://github.com/JasonSEFIDEFI/CV-",
+    "commit": "42b2d5fb18a99ccb47ee34806f2f10c98a9bd8dd",
+    "commit_date": "2026-09-25T12:41:21Z",
+    "zip_sha256": "8dc90ab40331e58d4ebb2f546658ddd94ac626d62df237d439b7abce51f8c509",
+    "files": 199,
+    "status": "collected"
+  },
+  "SEFI_QEC_Stack": {
+    "name": "SEFI_QEC_Stack",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI_QEC_Stack",
+    "commit": "7be66ac5d3e487196121dec136c3136ee5246963",
+    "commit_date": "2026-09-30T07:56:00Z",
+    "zip_sha256": "96d38b60187b94d9945865cc5771941f889f910f75f06e2950fd471713d224c2",
+    "files": 76,
+    "status": "collected"
+  },
+  "waveform-observed-entity": {
+    "name": "waveform-observed-entity",
+    "url": "https://github.com/JasonSEFIDEFI/waveform-observed-entity",
+    "commit": "ef6fb04610026d33d4925cee89a04da8720eabf1",
+    "commit_date": "2026-09-30T07:58:54Z",
+    "zip_sha256": "32700bc44ffaa282defc63ce58d000a20cd1ddbe89106f233aafc514739dbfc5",
+    "files": 7,
+    "status": "collected"
+  },
+  "SEFI-Manuscripts": {
+    "name": "SEFI-Manuscripts",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI-Manuscripts",
+    "commit": "d23c239ef3606b2cf2140b07db56d06615523c7c",
+    "commit_date": "2026-09-30T07:54:18Z",
+    "zip_sha256": "f88a35971859774c6a63c85085b0620d948e6a8368904ac2188f657db6494055",
+    "files": 198,
+    "status": "collected"
+  },
+  "SEFI": {
+    "name": "SEFI",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI",
+    "commit": "a02144224f886ef067117e7abfad8c911035792a",
+    "commit_date": "2026-09-30T07:57:42Z",
+    "zip_sha256": "17b23b1efb8b9a5110dcd18d758e19a806e0b0fea6350fbadb5e9416e16ca1a6",
+    "files": 4692,
+    "status": "collected"
+  },
+  "SEFI-PY": {
+    "name": "SEFI-PY",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI-PY",
+    "commit": "611af1170fa7bcbcb3ff03401843ebf63bdca7c7",
+    "commit_date": "2026-09-30T07:50:49Z",
+    "zip_sha256": "8988d6974fe2cb374b6a4930f0ca335542ef53f062ac625d65ee2fa0600561a3",
+    "files": 4816,
+    "status": "collected"
+  }
+}
