@@ -131,3 +131,10 @@ The broader research is available for technical review, without requiring it as 
 
 SEFI, DEFI, and GWFM remain research proposals. Current classical numerical results do not establish observed matter, universal gravity, or hardware error-correction performance. Submission identifiers do not establish acceptance or peer-reviewed publication. My research preparation is independent; I do not hold an awarded PhD.
 
+
+
+## Master Resume
+
+[Download the comprehensive master resume PDF](master-resume/Jason_Duran_Dutton_Master_Resume.pdf) · [Editable Markdown source](master-resume/Jason_Duran_Dutton_Master_Resume.md) · [Evidence basis and unresolved record details](master-resume/EVIDENCE_BASIS.md).
+
+Updated September 30, 2026. Covers industrial, automotive, software and research work. Historical credentials and disputed dates remain qualified; manuscripts are not presented as accepted publications.
