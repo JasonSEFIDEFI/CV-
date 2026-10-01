@@ -1,0 +1,152 @@
+[
+  {
+    "id": "K01",
+    "name": "Diagnostic reasoning and test design",
+    "claims": [
+      "C003",
+      "C005"
+    ],
+    "assessment": "Observed software workflow and a concrete industrial case account; cross-domain recurrence is plausible, industrial event not independently verified."
+  },
+  {
+    "id": "K02",
+    "name": "Verification and measurement discipline",
+    "claims": [
+      "C003",
+      "C004"
+    ],
+    "assessment": "Source implements evidence limits and recovery checks; passing results remain reported until reproduced."
+  },
+  {
+    "id": "K03",
+    "name": "Pilot process operation and electrical integration",
+    "claims": [
+      "C008"
+    ],
+    "assessment": "Historical source assertions plus independent pilot context; personal commissioning leadership pending."
+  },
+  {
+    "id": "K04",
+    "name": "Electrical/mechanical maintenance and fault isolation",
+    "claims": [
+      "C005",
+      "C010",
+      "C011"
+    ],
+    "assessment": "Detailed historical descriptions; wage statement establishes employment only."
+  },
+  {
+    "id": "K05",
+    "name": "Fabrication, construction and field coordination",
+    "claims": [
+      "C012",
+      "C013"
+    ],
+    "assessment": "Reports mention prints, logistics, crew allocation and supervision; project evidence pending."
+  },
+  {
+    "id": "K06",
+    "name": "Customer communication and operational coordination",
+    "claims": [
+      "C014",
+      "C015"
+    ],
+    "assessment": "Narrative details of lender/client relationships and inventory operations; no outcome metrics verified."
+  },
+  {
+    "id": "K07",
+    "name": "Technical writing and manuscript development",
+    "claims": [
+      "C019"
+    ],
+    "assessment": "Visible TeX/PDF/documentation artifacts; research correctness/publication status separate."
+  },
+  {
+    "id": "K08",
+    "name": "Mathematical modeling and computational investigation",
+    "claims": [
+      "C023"
+    ],
+    "assessment": "Numerical source, model assumptions, result files, failed searches and limitations are visible; independent physics validation pending."
+  },
+  {
+    "id": "K09",
+    "name": "Interactive technical explanation",
+    "claims": [
+      "C025"
+    ],
+    "assessment": "Educational reference model, interactive source and explicit assumptions; teaching impact or user outcomes not measured."
+  },
+  {
+    "id": "K10",
+    "name": "Modular software and quantum-information exploration",
+    "claims": [
+      "C026"
+    ],
+    "assessment": "Modules and test files demonstrate implementation work at artifact level; no hardware performance inference."
+  },
+  {
+    "id": "K11",
+    "name": "Conceptual hardware/system architecture",
+    "claims": [
+      "C027"
+    ],
+    "assessment": "Acoustic proposal links geometry, phase control and illumination; build and safety validation pending."
+  },
+  {
+    "id": "K12",
+    "name": "Music and audio interests",
+    "claims": [
+      "C029"
+    ],
+    "assessment": "Equipment visible; musicianship duration, skill and professional sound work remain self-reported."
+  },
+  {
+    "id": "K13",
+    "name": "Systems-oriented problem solving",
+    "claims": [
+      "C003",
+      "C005",
+      "C030"
+    ],
+    "assessment": "A provisional recurring pattern from diagnostic software, industrial case account and research workflows."
+  },
+  {
+    "id": "K14",
+    "name": "Technical leadership and training",
+    "claims": [
+      "C011",
+      "C012",
+      "C014",
+      "C015"
+    ],
+    "assessment": "Reported supervision/training and coordination; crew sizes, formal titles and outcomes not independently verified."
+  },
+  {
+    "id": "K15",
+    "name": "Safety and regulatory recordkeeping",
+    "claims": [
+      "C008",
+      "C010",
+      "C011"
+    ],
+    "assessment": "Reported inspections, logs and compliance duties; no incident-free, audit-perfect or zero-citation claim supported."
+  },
+  {
+    "id": "K16",
+    "name": "AI-assisted development",
+    "claims": [
+      "C019",
+      "C030"
+    ],
+    "assessment": "Career documents report AI use and repository artifacts include assistant-oriented material; contribution attribution not resolved."
+  },
+  {
+    "id": "K17",
+    "name": "Enterprise cloud architecture / HPC operations",
+    "claims": [
+      "C026"
+    ],
+    "assessment": "Azure integration code is narrower evidence. Enterprise Azure/AWS, security, ITSM and HPC operational claims currently lack direct deployment records."
+  }
+]

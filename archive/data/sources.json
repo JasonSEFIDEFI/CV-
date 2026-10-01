@@ -1,0 +1,163 @@
+[
+  {
+    "id": "S061",
+    "label": "Detailed pasted historical career account",
+    "evidence_type": "first_party",
+    "url": null,
+    "access": "private"
+  },
+  {
+    "id": "S025",
+    "label": "Master Resume PDF",
+    "evidence_type": "first_party",
+    "url": null,
+    "access": "private"
+  },
+  {
+    "id": "S029",
+    "label": "Field Engineering Resume PDF",
+    "evidence_type": "first_party",
+    "url": null,
+    "access": "private"
+  },
+  {
+    "id": "S054",
+    "label": "Microsoft Software AI Master PDF",
+    "evidence_type": "first_party",
+    "url": null,
+    "access": "private"
+  },
+  {
+    "id": "S056",
+    "label": "Microsoft Quantum Revised Packet PDF",
+    "evidence_type": "first_party",
+    "url": null,
+    "access": "private"
+  },
+  {
+    "id": "S057",
+    "label": "SEFI entity establishment statement",
+    "evidence_type": "first_party",
+    "url": null,
+    "access": "private"
+  },
+  {
+    "id": "S084",
+    "label": "Supplied photo of 2025 employer wage statement",
+    "evidence_type": "documentary_copy",
+    "url": null,
+    "access": "restricted"
+  },
+  {
+    "id": "W001",
+    "label": "MRC company history",
+    "evidence_type": "organization_primary",
+    "url": "https://mineralsrefining.com/about-mrc/",
+    "access": "public"
+  },
+  {
+    "id": "W002",
+    "label": "MRC process and field test results",
+    "evidence_type": "organization_primary",
+    "url": "https://mineralsrefining.com/hhs-technology/",
+    "access": "public"
+  },
+  {
+    "id": "W003",
+    "label": "Contura name-change announcement",
+    "evidence_type": "organization_primary",
+    "url": "https://alphametresources.com/news_articles/contura-energy-announces-upcoming-name-change-to-alpha-metallurgical-resources-inc/",
+    "access": "public"
+  },
+  {
+    "id": "W004",
+    "label": "Public ORCID record",
+    "evidence_type": "mixed_platform_first_party",
+    "url": "https://orcid.org/0009-0004-8655-9901",
+    "access": "public"
+  },
+  {
+    "id": "R001",
+    "label": "Public repository API inventory",
+    "evidence_type": "platform_metadata",
+    "url": "https://api.github.com/users/JasonSEFIDEFI/repos?per_page=100",
+    "access": "public"
+  },
+  {
+    "id": "R002",
+    "label": "SEFI-PY diagnostic implementation",
+    "evidence_type": "artifact",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI-PY/blob/611af1170fa7bcbcb3ff03401843ebf63bdca7c7/SEFI-PY%20Evolution/research/calibration_workbench/workbench.py",
+    "access": "public"
+  },
+  {
+    "id": "R003",
+    "label": "SEFI-PY diagnostic validation record",
+    "evidence_type": "first_party_validation",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI-PY/blob/611af1170fa7bcbcb3ff03401843ebf63bdca7c7/SEFI-PY%20Evolution/research/calibration_workbench/VALIDATION.md",
+    "access": "public"
+  },
+  {
+    "id": "R004",
+    "label": "14CM15 tram failure case study",
+    "evidence_type": "first_party_case_study",
+    "url": "https://github.com/JasonSEFIDEFI/CV-/blob/42b2d5fb18a99ccb47ee34806f2f10c98a9bd8dd/14CM15_Tram_Failure_Case_study.pdf",
+    "access": "public"
+  },
+  {
+    "id": "R005",
+    "label": "PhD research archive README",
+    "evidence_type": "first_party",
+    "url": "https://github.com/JasonSEFIDEFI/PhD/blob/f02a81247f8b94bb8fc51487b357b383de12bf16/README.md",
+    "access": "public"
+  },
+  {
+    "id": "R006",
+    "label": "Dr Ersoy research discussion brief",
+    "evidence_type": "first_party",
+    "url": "https://github.com/JasonSEFIDEFI/PhD/blob/f02a81247f8b94bb8fc51487b357b383de12bf16/10_DISSERTATION/research_direction_2026_09_23/dr_ersoy_discussion_2026_09_23.md",
+    "access": "public"
+  },
+  {
+    "id": "R007",
+    "label": "QEC stack source tree",
+    "evidence_type": "artifact",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI_QEC_Stack/tree/7be66ac5d3e487196121dec136c3136ee5246963",
+    "access": "public"
+  },
+  {
+    "id": "R008",
+    "label": "Double Slit Explorer physics and limits",
+    "evidence_type": "first_party",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI-PY/blob/611af1170fa7bcbcb3ff03401843ebf63bdca7c7/SEFI-PY%20Evolution/sim/double_slit_explorer/docs/PHYSICS.md",
+    "access": "public"
+  },
+  {
+    "id": "R009",
+    "label": "Vortex console implementation and limits",
+    "evidence_type": "artifact_and_first_party",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI-PY/blob/611af1170fa7bcbcb3ff03401843ebf63bdca7c7/SEFI-PY%20Evolution/sim/vortex_console/README.md",
+    "access": "public"
+  },
+  {
+    "id": "R010",
+    "label": "Manuscript repository",
+    "evidence_type": "artifact",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI-Manuscripts",
+    "access": "public"
+  },
+  {
+    "id": "U001",
+    "label": "User update: submissions began about one month ago; correspondence forthcoming",
+    "evidence_type": "dated_self_report",
+    "url": null,
+    "access": "private"
+  },
+  {
+    "id": "M001",
+    "label": "Mobile photographs of computing workspace and musical equipment",
+    "evidence_type": "supplied_media",
+    "url": null,
+    "access": "private"
+  }
+]
