@@ -1,6 +1,6 @@
 # Deliverable register
 
-Date: September 30, 2026. Local hub working version. Public GitHub changes not yet published.
+Date: September 30, 2026. Working hub proposed in [draft pull request #2](https://github.com/JasonSEFIDEFI/CV-/pull/2); not merged into the default branch.
 
 | Requested output | Current state |
 |---|---|

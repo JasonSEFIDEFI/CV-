@@ -21,7 +21,7 @@ Date: September 30, 2026. Source IDs refer to the intake manifest or pinned publ
 | R004 | 14CM15 tram failure case study | first_party_case_study | [source](https://github.com/JasonSEFIDEFI/CV-/blob/42b2d5fb18a99ccb47ee34806f2f10c98a9bd8dd/14CM15_Tram_Failure_Case_study.pdf) |
 | R005 | PhD research archive README | first_party | [source](https://github.com/JasonSEFIDEFI/PhD/blob/f02a81247f8b94bb8fc51487b357b383de12bf16/README.md) |
 | R006 | Dr Ersoy research discussion brief | first_party | [source](https://github.com/JasonSEFIDEFI/PhD/blob/f02a81247f8b94bb8fc51487b357b383de12bf16/10_DISSERTATION/research_direction_2026_09_23/dr_ersoy_discussion_2026_09_23.md) |
-| R007 | QEC stack source tree | artifact | [source](https://github.com/JasonSEFIDEFI/SEFI_QEC_Stack) |
+| R007 | QEC stack source tree | artifact | [source](https://github.com/JasonSEFIDEFI/SEFI_QEC_Stack/tree/7be66ac5d3e487196121dec136c3136ee5246963) |
 | R008 | Double Slit Explorer physics and limits | first_party | [source](https://github.com/JasonSEFIDEFI/SEFI-PY/blob/611af1170fa7bcbcb3ff03401843ebf63bdca7c7/SEFI-PY%20Evolution/sim/double_slit_explorer/docs/PHYSICS.md) |
 | R009 | Vortex console implementation and limits | artifact_and_first_party | [source](https://github.com/JasonSEFIDEFI/SEFI-PY/blob/611af1170fa7bcbcb3ff03401843ebf63bdca7c7/SEFI-PY%20Evolution/sim/vortex_console/README.md) |
 | R010 | Manuscript repository | artifact | [source](https://github.com/JasonSEFIDEFI/SEFI-Manuscripts) |

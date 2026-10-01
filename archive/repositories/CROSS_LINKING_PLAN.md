@@ -1,6 +1,6 @@
 # Repository cross-linking plan
 
-Implemented locally: CV- README links its evidence/analysis sections and all nine repository records. Specialized code/drafts remain at pinned upstream versions. Existing remote repositories are unchanged in this phase.
+Implemented locally and proposed in draft pull request #2: CV- README links its evidence/analysis sections and all nine repository records. Specialized code/drafts remain at pinned upstream versions. Existing remote repositories are unchanged in this phase.
 
 For SEFI-PY, SEFI_QEC_Stack, PhD and SEFI-Manuscripts add a short Professional archive link to `https://github.com/JasonSEFIDEFI/CV-`, plus the relevant evidence section once the hub changes are published. Existing backlinks should be consolidated, not duplicated.
 

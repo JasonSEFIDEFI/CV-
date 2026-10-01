@@ -122,7 +122,7 @@
     "id": "R007",
     "label": "QEC stack source tree",
     "evidence_type": "artifact",
-    "url": "https://github.com/JasonSEFIDEFI/SEFI_QEC_Stack",
+    "url": "https://github.com/JasonSEFIDEFI/SEFI_QEC_Stack/tree/7be66ac5d3e487196121dec136c3136ee5246963",
     "access": "public"
   },
   {
