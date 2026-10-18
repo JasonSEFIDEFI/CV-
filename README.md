@@ -138,3 +138,11 @@ SEFI, DEFI, and GWFM remain research proposals. Current classical numerical resu
 [Download the comprehensive master resume PDF](master-resume/Jason_Duran_Dutton_Master_Resume.pdf) · [Editable Markdown source](master-resume/Jason_Duran_Dutton_Master_Resume.md) · [Evidence basis and unresolved record details](master-resume/EVIDENCE_BASIS.md).
 
 Updated September 30, 2026. Covers industrial, automotive, software and research work. Historical credentials and disputed dates remain qualified; manuscripts are not presented as accepted publications.
+
+## Research synchronization - October 18, 2026
+
+- [Manuscript archive and author-review drafts](https://github.com/JasonSEFIDEFI/SEFI-Manuscripts/blob/main/RESEARCH-UPDATE-2026-10-18.md).
+- [New simulations, assumptions, and reproducible calculations](https://github.com/JasonSEFIDEFI/SEFI-PY/tree/main/research/2026-10-18).
+- [Book manuscripts and early source material](https://github.com/JasonSEFIDEFI/Publishing-V-Drive-Content).
+
+These are research drafts and computational studies, not confirmations of new physics, a working propulsion engine, journal acceptance, or a doctoral award. Prior versions and submission history remain distinct. Existing draft pull requests are retained for review.
