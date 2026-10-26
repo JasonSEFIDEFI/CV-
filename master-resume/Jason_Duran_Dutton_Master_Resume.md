@@ -8,7 +8,7 @@ github.com/JasonSEFIDEFI | linkedin.com/in/jasondurandutton
 
 ## Professional Profile
 
-Technical practitioner whose work spans industrial electrical maintenance, process operations, steel fabrication, construction, automotive operations, and independent software and research projects. Experience includes fault isolation, equipment repair, crew coordination, technical documentation, and translating system behavior into practical diagnostic steps. Current public work includes Python modeling tools, synthetic measurement diagnostics, interactive visualizations, and research manuscripts.
+Technical practitioner whose work spans industrial electrical maintenance, process operations, steel fabrication, construction, automotive operations, and independent software and research projects. Experience includes fault isolation, equipment repair, crew coordination, technical documentation, and translating system behavior into practical diagnostic steps. Current public work includes Python modeling tools, synthetic measurement diagnostics, interactive visualizations, and research manuscripts. Currently enrolled in the BSIT program at American InterContinental University, with a long-term goal of doctoral study in computational physics.
 
 ## Core Capabilities
 
@@ -122,6 +122,12 @@ Author of research manuscripts and technical proposals exploring geometric field
 - Acoustic-Levitated Dynamic Voxel System for Volumetric Field Visualization: proposed control/illumination architecture; a built and validated hardware system is not established.
 ## Education and Training
 
+### American InterContinental University (AIU)
+
+Bachelor of Science in Information Technology (BSIT) | Currently enrolled; degree in progress
+
+Long-term academic goal: a PhD in computational physics. Building computing foundations through the BSIT alongside independent Python research and further preparation in mathematics, numerical methods, and physics.
+
 ### Mountain Empire Community College
 
 Mining electrical and underground mining studies | 2009-2011
@@ -149,4 +155,4 @@ Previously reported American Heart Association training includes first aid, adul
 Historical duties and training reflect supplied career accounts; public software and manuscript artifacts provide direct portfolio evidence. This master resume does not claim a PhD, Westminster enrollment, current credential validity, accepted journal publications or independently validated physical breakthroughs.
 
 
-Updated September 30, 2026.
+Education updated October 26, 2026; other historical record notes retained.

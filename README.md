@@ -1,5 +1,16 @@
 # Jason Duran Dutton
 
+## Current education and academic direction
+
+I am currently enrolled at **American InterContinental University (AIU)**, pursuing a **Bachelor of Science in Information Technology (BSIT)**.
+
+My long-term academic goal is a **PhD in computational physics**. I am connecting my information-technology studies with independent Python research, scientific computing, numerical modeling, testing, and reproducible software development. My preparation goals include deeper study of calculus, linear algebra, differential equations, numerical analysis, and theoretical physics.
+
+[Education and computational-physics pathway](ACADEMIC-PATHWAY.md) · [Current master résumé](master-resume/Jason_Duran_Dutton_Master_Resume.pdf)
+
+The BSIT is in progress. Doctoral study is a future goal; my current enrollment is in the bachelor's program.
+
+
 ## Interactive Double Slit Explorer
 
 [Start here: five-minute educational demo and launch instructions](https://github.com/JasonSEFIDEFI/SEFI-PY/tree/main/SEFI-PY%20Evolution/sim/double_slit_explorer).
@@ -25,7 +36,7 @@ The prototype asks a field engineering question: **What changed, what should we 
 | Practical output for an engineer | [Service report](https://github.com/JasonSEFIDEFI/SEFI-PY/blob/main/SEFI-PY%20Evolution/research/calibration_workbench/sample_output/service_report.md) |
 | Handling insufficient evidence | [Ambiguous-case report](https://github.com/JasonSEFIDEFI/SEFI-PY/blob/main/SEFI-PY%20Evolution/research/calibration_workbench/sample_output/ambiguous_report.md) |
 | Actual results and limitations | [Validation record](https://github.com/JasonSEFIDEFI/SEFI-PY/blob/main/SEFI-PY%20Evolution/research/calibration_workbench/VALIDATION.md) |
-| Professional experience | [Resume PDF](Master%20Resume.pdf) · [Resume source](Master%20Resume.tex) |
+| Professional experience | [Resume PDF](master-resume/Jason_Duran_Dutton_Master_Resume.pdf) · [Resume source](master-resume/Jason_Duran_Dutton_Master_Resume.md) |
 
 The visual demonstration is included as `sample_output/index.html`; download the workbench and open it locally. GitHub displays its source rather than hosting the page.
 
@@ -105,7 +116,7 @@ This troubleshooting methodology remains central to all of my engineering and re
 
 This experience is the basis for the proposed engineering contribution. The prototype does not imply prior hands-on operation of a trapped-ion quantum computer or specific RF instruments. Equipment-specific training and validation would be part of a new role.
 
-The existing resume includes broader research positioning and material prepared for another opportunity; this README provides the focused introduction for the eleQtron conversation.
+The linked master résumé is the current career summary. Earlier application-specific résumés remain in the repository as historical versions and may predate the current education update.
 
 ## Research and software portfolio
 
@@ -137,7 +148,7 @@ SEFI, DEFI, and GWFM remain research proposals. Current classical numerical resu
 
 [Download the comprehensive master resume PDF](master-resume/Jason_Duran_Dutton_Master_Resume.pdf) · [Editable Markdown source](master-resume/Jason_Duran_Dutton_Master_Resume.md) · [Evidence basis and unresolved record details](master-resume/EVIDENCE_BASIS.md).
 
-Updated September 30, 2026. Covers industrial, automotive, software and research work. Historical credentials and disputed dates remain qualified; manuscripts are not presented as accepted publications.
+Education updated October 26, 2026. Covers industrial, automotive, software and research work. Historical credentials and disputed dates remain qualified; manuscripts are not presented as accepted publications.
 
 ## Research synchronization - October 18, 2026
 
