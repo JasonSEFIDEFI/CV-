@@ -1,5 +1,12 @@
 # Jason Duran Dutton
 
+## Featured research videos
+
+[![Narrated photonics research abstract](https://raw.githubusercontent.com/JasonSEFIDEFI/SEFI-Manuscripts/main/media/video-abstracts/photonics_poster.png)](https://github.com/JasonSEFIDEFI/SEFI-Manuscripts/tree/main/media/video-abstracts)
+
+**[Watch or download all three graphical abstracts](https://github.com/JasonSEFIDEFI/SEFI-Manuscripts/tree/main/media/video-abstracts)** — narrated photonic error-correction proposal, Single Entity Field Interpretation graphical abstract, and unified geometric field research overview. Independent research proposals and illustrative models; not accepted publications or experimental confirmations.
+
+
 ## Current education and academic direction
 
 I am currently enrolled at **American InterContinental University (AIU)**, pursuing a **Bachelor of Science in Information Technology (BSIT)**.
