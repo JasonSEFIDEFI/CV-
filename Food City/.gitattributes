@@ -1,0 +1,6 @@
+# Preserve presentation, image and archive bytes on every platform
+*.pdf -text
+*.pptx -text
+*.zip -text
+*.png -text
+*.pyc -text
