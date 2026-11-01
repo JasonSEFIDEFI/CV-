@@ -4,21 +4,21 @@
 
 ## Executive concept
 
-One platform serves households purchasing grocery delivery and households receiving a delivery fee waiver. Customers choose groceries and request assistance. Employees freely choose whether to accept available paid delivery assignments. Managers coordinate store preparation, eligibility, capacity and the fund. Fuel rewards provide an optional supplementary incentive, separate from wages, mileage reimbursement and overtime obligations.
+One platform serves households purchasing grocery delivery and households receiving a delivery fee waiver. Customers choose groceries and request assistance. The store manager decides whether an employee can be spared for delivery duty. Released employees freely choose whether to accept available paid delivery assignments. Managers coordinate store preparation, eligibility, capacity and the fund. Fuel rewards provide an optional supplementary incentive, separate from wages, mileage reimbursement and overtime obligations.
 
-The initial assistance benefit waives a $4.95 delivery fee. It does not pay for groceries, taxes or tips. A future grocery subsidy would require its own policy, accounting and funding. Do not promise free delivery solely based on age: proposed eligibility considers a transportation barrier, the service zone, funding and a documented decision. Offer a telephone-assisted channel in the real pilot for residents who cannot use the website.
+The initial assistance benefit waives a $4.95 delivery fee. It does not pay for groceries, taxes or tips. A future grocery subsidy would require its own policy, accounting and funding. Do not promise free delivery solely based on age: proposed eligibility considers a transportation barrier, funding and a documented decision. Offer a telephone-assisted channel in the real pilot for residents who cannot use the website.
 
 ## Product and service design
 
 | Console | Primary actions | Information boundary |
 |---|---|---|
-| Customer | Build basket, place paid/assisted order, cancel early, request eligibility review, track status | Own orders and application only |
-| Employee | See available offers, accept/release, depart, record completion/failure, minutes and miles, inspect rewards | Offers and own assignments/rewards, no eligibility reasons |
+| Customer | Select coverage or employee route, build basket, place paid/assisted order, cancel early, request eligibility review, track status | Own orders and application only |
+| Employee | Add coverage routes to map, see available offers, accept/release, depart, record completion/failure, minutes and miles, inspect rewards | Offers and own assignments/rewards, no eligibility reasons |
 | Management | Pick/ready/offer, review assistance, cancel early, approve/issue demo rewards, inspect metrics/audit | Combined demo role, split into dispatcher, eligibility reviewer and finance approver in production |
 
 Order lifecycle: placed → picking → ready → offered → accepted → out for delivery → delivered or failed. Customers cancel only while placed/picking. Management can cancel through offered. Employees can release an accepted order before departure. Delivery requires handoff confirmation. Failure records work time and mileage but earns no reward and requires an exception review before replacement or refund. No duplicate completion or reward issuance.
 
-Dispatch is a manual offer board, not optimized routing. Managers should check staff coverage, paid hours, vehicle approval and capacity before offering. Drivers choose assignments voluntarily. A real system should expire unaccepted offers after 10 minutes, alert a dispatcher and offer a customer reschedule/refund if no driver is available. The local prototype does not run timers or send alerts.
+Dispatch is a manual offer board, not optimized routing. The manager must release an employee for delivery duty after checking store coverage, paid hours, vehicle approval and capacity. The server blocks employee acceptance and departure without that release. The manager can recall the employee, blocking new acceptance and departure while allowing an already-departed delivery to finish safely. Drivers choose assignments voluntarily. A real system should expire unaccepted offers after 10 minutes, alert a dispatcher and offer a customer reschedule/refund if no driver is available. The local prototype does not run timers or send alerts.
 
 Assistance lifecycle: pending → approved/denied with reason. Approvals last 30 days, with up to four fee waivers, subject to remaining fund balance. Proposed pilot: self-attested transportation barrier with reviewer confirmation, no diagnoses or income documents in the demo. Real enrollment must provide consent, a plain-language notice, appeal route, renewal reminders and alternatives when funding runs out. Managers should review appeals within two business days. Reserve $4.95 when an assisted order is placed, restore it on eligible cancellation, retain the charge on failed delivery pending manual review. Store the application ID on each order so cancellations restore the correct allowance. Benefit renewal creates a new application after expiry, including when the prior four uses have already been consumed.
 
@@ -28,7 +28,7 @@ Rewards: one $2 pending credit per successful order → finance approval → biw
 
 Browser (HTML/CSS/JavaScript) communicates over same-origin JSON with a Python standard-library HTTP server on 127.0.0.1:8765. Server checks session role and record ownership, validates transitions and persists to SQLite. Transactional writes reserve assistance funds and assign orders atomically. Database constraints enforce one reward per order. In-memory sessions use HttpOnly, SameSite cookies. No cloud services, packages, external APIs, telemetry or real accounts are required.
 
-Entities: orders, assistance applications, fund balance, rewards and audit events. Catalog and demo identity fixtures live in source. Money uses integer cents. Timestamps use UTC. The server-generated activity log records actor, action, object and time. The seed contains nine orders across lifecycle states, one approved assistance case, and two pending rewards. It is a synthetic snapshot, not a measured history. Estimates and seeded dates should never be presented as pilot outcomes.
+Entities: orders, assistance applications, employee-added coverage routes, manager duty releases, fund balance, rewards and audit events. Catalog and demo identity fixtures live in source. Money uses integer cents. Timestamps use UTC. The server-generated activity log records actor, action, object and time. The seed contains nine orders across lifecycle states, one approved assistance case, and two pending rewards. It is a synthetic snapshot, not a measured history. Estimates and seeded dates should never be presented as pilot outcomes.
 
 ## Production target and gaps
 
@@ -42,7 +42,7 @@ Other deliberate gaps: real payment authorization/capture/refund, inventory/subs
 
 ## One-store pilot
 
-Proposed duration: four weeks of readiness followed by eight weeks of service. One store selected by leadership, a five-mile zone after route validation, 20 completed orders/day, five days/week, two windows/day, 800 completed orders total. Reserve 30% (240 orders) for delivery assistance. Target approximately 40–60 assisted households without implying all will order weekly. Recruit 6–8 interested employees with paid training and voluntary assignment acceptance. Staff managers must ensure grocery operations remain covered. No alcohol, tobacco, controlled medicines or other age-restricted items in the pilot.
+Proposed duration: four weeks of readiness followed by eight weeks of service. One store selected by leadership, a five-mile default radius with employee-added rural map routes, 20 completed orders/day, five days/week, two windows/day, 800 completed orders total. Reserve 30% (240 orders) for delivery assistance. Target approximately 40–60 assisted households without implying all will order weekly. Recruit 6–8 interested employees with paid training and voluntary assignment acceptance. Staff managers must ensure grocery operations remain covered. No alcohol, tobacco, controlled medicines or other age-restricted items in the pilot.
 
 | Period | Owner | Deliverable / gate |
 |---|---|---|
@@ -52,11 +52,19 @@ Proposed duration: four weeks of readiness followed by eight weeks of service. O
 | Service weeks 3–6 | Store lead and analyst | Raise to 20/day only after safety and service checks, weekly review and employee feedback |
 | Service weeks 7–8 | Sponsor and finance | Evaluate unit costs, access outcomes and staff impact, decide stop/adjust/expand |
 
-The financial base case assumes 800 completions despite the ramp. Recover volume only if capacity permits; otherwise report actual volume and the higher fixed cost per order. At 700 completions, using the same mix and unit assumptions, operating gap becomes $12,866.67 rather than $14,453.33. A two-window 20/day schedule with 30 delivery minutes/order needs about 10 delivery labor hours/day, plus 3.33 picking hours and 2 coordination hours. Availability, peak staffing and route safety must support that demand. No unpaid commute deliveries.
+The financial base case assumes 800 completions despite the ramp. Recover volume only if capacity permits; otherwise report actual volume and the higher fixed cost per order. At 700 completions, using the same mix and unit assumptions, operating gap becomes $12,866.67 rather than $14,453.33. A two-window 20/day schedule with 30 delivery minutes/order needs about 10 delivery labor hours/day, plus 3.33 picking hours and 2 coordination hours. Availability, peak staffing and route safety must support that demand. Employees may choose deliveries along their way home, including mountain communities. Employer-directed delivery duties still require a reviewed pay and mileage policy. Distinguish normal commuting from compensable delivery activity using HR-approved time and mileage rules. Employees can decline any route without penalty.
+
+## Radius rule and employee route exceptions
+
+The default delivery radius is five miles. Outside that radius, an employee must add a corridor to the delivery map before a customer can book against it. That route extends coverage for willing participation along a rural or homeward journey, including mountain communities. Adding a route does not require accepting every order. The employee who adds the route chooses whether to accept deliveries on that corridor, with no penalty for declining. The manager retains the final staffing decision: no employee can accept or depart until the manager releases them for delivery duty. A route entry is a coverage exception, not staffing permission. Safe access, vehicle coverage, paid duty capacity, handling and funding still apply.
+
+The prototype includes a synthetic coverage map, two seeded employee-added corridors of 18 and 22 delivery miles, and an employee form to add more. Outside-radius bookings without a listed route fail validation. Customers select an employee-added route for an exception. The employee who added it must accept the assignment. The demo uses entered delivery miles as a simplified radius proxy, and its map is a schematic. Production must distinguish straight-line radius from driving distance, use authorized geocoding, validate exact address-to-corridor membership, constrain detours, and expire or withdraw unavailable routes. A route name alone cannot establish actual geographic coverage.
+
+Homeward deliveries remain employer-directed delivery duties with a reviewed pay and mileage policy. Distinguish normal commuting from compensable delivery activity using HR-approved time and mileage rules. Record attributable delivery time and reimbursable miles. An assistance applicant outside the default radius can qualify when an employee-added route covers the household.
 
 ## Financial model
 
-Eight-week base case. Grocery merchandise revenue and cost, taxes and tips are excluded. No basket margin, retention or charitable grant is credited as a proven benefit. Loaded labor rate is a placeholder inclusive of assumed overhead; finance must substitute actual wage, benefit, overtime and payroll assumptions. Mileage reimbursement of $0.70/mile is a budget input, not a claim of a legal or IRS rate.
+Eight-week reference case for short routes, not a validated rural average. Grocery merchandise revenue and cost, taxes and tips are excluded. No basket margin, retention or charitable grant is credited as a proven benefit. Loaded labor rate is a placeholder inclusive of assumed overhead; finance must substitute actual wage, benefit, overtime and payroll assumptions. Mileage reimbursement of $0.70/mile is a budget input, not a claim of a legal or IRS rate.
 
 | Per completed delivery | Calculation | Cost |
 |---|---|---:|
@@ -87,6 +95,8 @@ At $4.95 receipt for every completed order (customer or sponsor), operating supp
 
 Sensitivity: 20 delivery minutes lowers the operating gap by $2,933.33 to $11,520.00. Forty minutes raises it to $17,386.67. Six route miles raises the base gap by $840 to $15,293.33. A $7.95 paid fee adds $1,680 in receipts at unchanged volume/mix, lowering the gap to $12,773.33; willingness to pay is untested. At 700 completions the operating gap is $12,866.67, with unchanged $1,760 coordination and $4.95 receipt per completion. Reforecast weekly using actual time, mileage, failures and overtime. These sensitivities change one input at a time.
 
+Rural scenario: at 18 delivery miles and 45 delivery minutes per completion, variable cost rises to $35.7667/order. With 800 completions and the same receipts and coordination, operating expense becomes $30,373.33 and the operating gap becomes $26,413.33. The corresponding gross authorization with the same $15,000 setup and 15% contingency is $52,179.33. Actual homeward-route incremental miles may be lower, but dispatch must measure them rather than assume the journey is free. Do not adopt the short-route budget for rural operation without route evidence and revised approval.
+
 ## Measurement and decisions
 
 | Metric | Definition / collection | Proposed target |
@@ -108,6 +118,18 @@ Expand only after sponsor, operations, finance and risk approve eight-week resul
 ## Risks and controls
 
 Labor: paid deliveries, accurate time records, HR review of overtime and reward treatment. Insurance: written commercial-use coverage and employer liability approval before any route. Food safety: insulated transport, segregation, time/temperature procedure, failed-handoff return instructions and training. Privacy: minimum collection, role separation and access logging. Funding: committed reserve, atomic reservations, weekly reconciliation. Availability: capped windows, employee opt-in, backup paid coverage and rescheduling. Fairness: published criteria, consistent decisions, appeals and phone access. Fraud: unique rewards, separate approver, issuance reconciliation and exception audit. Reputation: independent proposal label and no claims about existing Food City services or partnerships.
+
+## Long-term drone hub roadmap
+
+The long-term ambition is a delivery network capable of serving eligible grocery deliveries by drone from central hubs, with Abingdon as an illustrative candidate for evaluation. No actual site, operator, flight path, Food City agreement or approval is claimed. The goal of ultimately supporting all deliveries by drone is a design ambition, not an established payload, coverage or economic capability. Ground service remains the fallback wherever weather, weight, access, terrain or approved operating limits prevent a flight.
+
+Keep the customer order and eligibility workflow independent of transport mode. Proposed additional entities: Hub, FulfillmentTask, CarrierAssignment, Package (weight, dimensions, cold-chain class), DroneMission, AirspaceAuthorization and DeliveryEvidence. One order can split across packages. A transport adapter exposes quote, capacity check, reserve, dispatch, track, cancel and confirm. Employee assignments use the ground adapter, while a future certified partner provides a drone adapter. Never translate a customer checkout directly into an aircraft command.
+
+A drone dispatch proposal would pass through hub preparation, package/weight validation, a customer-approved delivery point, weather and operating-envelope checks, operator authorization, mission acceptance, launch, in-flight monitoring and delivery confirmation. The flight operator retains operational control. Callback signatures, idempotent mission updates, lost-link and aborted-flight handling, ground fallback and cold-chain reconciliation need dedicated engineering. Manager staffing release still controls store employees preparing or performing ground legs. Employee-added ground-route exceptions do not authorize airspace or drone coverage.
+
+Readiness sequence: (1) evaluate geography and payload mix with a qualified operator, including an Abingdon hub feasibility study; (2) simulate missions using synthetic orders; (3) assess site, community, privacy, environmental and aviation requirements; (4) obtain applicable operator/operation approvals and conduct a limited authorized demonstration; (5) measure delivery success, cost, noise, weather downtime, payload exclusions and ground fallback before expansion. Drone expenditure is outside the one-store employee-delivery budget. Any drone business case needs separate capital, operator, insurance, maintenance, battery, hub labor and failure-cost estimates.
+
+FAA guidance describes Part 135 certification and applicable approvals for compensated package delivery beyond visual line of sight. Confirm the requirements in effect at deployment with the operator and aviation counsel. Source: [FAA Package Delivery by Drone](https://www.faa.gov/uas/advanced_operations/package_delivery_drone). The local prototype does not dispatch, simulate or control aircraft. Its functioning delivery mode is employee ground delivery.
 
 ## Source basis and required professional review
 

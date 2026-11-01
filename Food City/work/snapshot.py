@@ -1,6 +1,6 @@
 import pathlib,zipfile,hashlib,json
 root=pathlib.Path.cwd(); dest=root/'outputs'/'Food-City-Complete-Workspace.zip'
-files=[p for p in root.rglob('*') if p.is_file() and p!=dest and '.git' not in p.parts]
+files=[p for p in root.rglob('*') if p.is_file() and p!=dest and '.git' not in p.parts and not p.is_relative_to(root/'work'/'cv-save')]
 manifest=[]
 with zipfile.ZipFile(dest,'w',zipfile.ZIP_DEFLATED) as z:
  for p in files:

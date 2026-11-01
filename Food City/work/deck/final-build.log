@@ -1,0 +1,156 @@
+Inspect result written to file: C:\Users\jason\Documents\Codex\2026-10-31\referenced-chatgpt-conversation-this-is-an\work\deck\final-manager-candidate.pptx.inspect.ndjson
+{
+  finalPath: 'C:\\Users\\jason\\Documents\\Codex\\2026-10-31\\referenced-chatgpt-conversation-this-is-an\\outputs\\Food-City-Community-Connect-Final.pptx',
+  receiptPath: 'C:\\Users\\jason\\Documents\\Codex\\2026-10-31\\referenced-chatgpt-conversation-this-is-an\\work\\deck\\final-manager-validation.json',
+  schemaVersion: 'presentation-finalization.v1',
+  finalSha256: '857e9844f41ba6f609cf76e057ffe0d0d5a77c6afee451077c19d86ce33dabf4',
+  byteCount: 4874068,
+  packageIntegrity: {
+    chart_count: 1,
+    claim_boundary: 'Structural package checks only; no slide text, notes, formulas, chart values, or native PowerPoint execution were inspected.',
+    finding_count: 0,
+    findings: [],
+    notes_parts_skipped: 17,
+    relationship_part_count: 45,
+    slide_count: 17,
+    status: 'pass',
+    exitCode: 0,
+    findingCount: 0,
+    warnings: []
+  },
+  presentationLayout: {
+    finding_count: 0,
+    findings: [],
+    font_policy: {
+      checked_text_script_count: 118,
+      native_font_rendering_verified: false,
+      observed_font_families: [Array],
+      observed_font_use_counts: [Object],
+      passed: true,
+      performed: true
+    },
+    slide_count: 17,
+    slide_size_in: [ 13.3333, 7.5 ],
+    warning_count: 0,
+    warnings: [],
+    exitCode: 0,
+    findingCount: 0,
+    fontPolicy: {
+      checked_text_script_count: 118,
+      native_font_rendering_verified: false,
+      observed_font_families: [Array],
+      observed_font_use_counts: [Object],
+      passed: true,
+      performed: true
+    }
+  },
+  fontSelection: {
+    basis: 'design',
+    approvedFamilies: [ 'Aptos' ],
+    scriptFonts: {},
+    referenceSha256: null,
+    referenceFontsVerifiedInEncodedText: false,
+    checked_text_script_count: 118,
+    native_font_rendering_verified: false,
+    observed_font_families: [ 'Aptos' ],
+    observed_font_use_counts: { Aptos: 118 },
+    passed: true,
+    performed: true
+  },
+  firstPartyImport: {
+    performed: true,
+    passed: true,
+    slideCount: 17,
+    sha256: '857e9844f41ba6f609cf76e057ffe0d0d5a77c6afee451077c19d86ce33dabf4',
+    runtimeNodeModules: 'C:/Users/jason/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/node_modules',
+    nodeExecutable: 'C:\\Users\\jason\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\node\\bin\\node.exe'
+  },
+  nativeTableArithmetic: {
+    performed: true,
+    checked_column_count: 0,
+    checks: [],
+    claim_boundary: 'Displayed-value arithmetic with rounding tolerance; not source-data verification.',
+    eligible_table_count: 0,
+    finding_count: 0,
+    findings: [],
+    native_table_count: 0,
+    passed: true,
+    schema_version: 'presentation-native-table-arithmetic.v1',
+    skipped_tables: [],
+    slide_count: 17,
+    warning_count: 0,
+    warnings: []
+  },
+  nativeChartTitles: {
+    performed: true,
+    checks: [ [Object] ],
+    finding_count: 0,
+    findings: [],
+    native_chart_count: 1,
+    native_powerpoint_verified: false,
+    passed: true,
+    presentation_sha256: '857e9844f41ba6f609cf76e057ffe0d0d5a77c6afee451077c19d86ce33dabf4',
+    schema_version: 'presentation-native-chart-titles.v1',
+    slide_count: 17,
+    source_text_emitted: false,
+    unresolved_linked_title_count: 0
+  },
+  sourceDerivedPolicyFlags: [
+    '--expected-slide-size-emu',
+    '12192000,6858000',
+    '--validate-heading-fit',
+    '--cover-role',
+    'none',
+    '--approved-font-family',
+    'Aptos'
+  ],
+  nativeChartValidation: {
+    detectedOwnerSlides: [ 9 ],
+    detectedChartCount: 1,
+    targetApplication: 'portable',
+    sourceChartOwnersExplicitlyDeclared: true,
+    validatorRan: true,
+    passed: true
+  },
+  nativeQuantitativeCharts: {
+    report: {
+      claim_boundary: 'OOXML/workbook structural validation only; source provenance and native PowerPoint opening remain separate checks.',
+      expected_quantitative_chart_slides: [Array],
+      failed_slide_count: 0,
+      failed_slides: [],
+      formal_human_reviewed: false,
+      native_application_open_verified: false,
+      package_sha256: '857e9844f41ba6f609cf76e057ffe0d0d5a77c6afee451077c19d86ce33dabf4',
+      passed: true,
+      results: [Array],
+      schema_version: 'owner-private.quantitative-chart-native-gate.v1',
+      slide_count: 17,
+      source_attachments_accessed: false,
+      validated_slide_count: 1
+    },
+    exitCode: 0,
+    validatedSlideCount: 1,
+    requiredOwnerSlides: [ 9 ],
+    approvedSourceFigureExceptionSlides: []
+  },
+  chartDataPackaging: {
+    conversion: 'chart_data_snapshot',
+    converted_chart_count: 1,
+    converted_charts: [ [Object] ],
+    detected_chart_owner_slides: [ 9 ],
+    experimental: true,
+    input_sha256: '780adc1e2f8cd97aa7430f42e7d1b9805a12d7c8a0615fdb78f16eeb50b44457',
+    new_formulas_describe_snapshot_only: true,
+    output_bytes: 4874068,
+    output_sha256: '857e9844f41ba6f609cf76e057ffe0d0d5a77c6afee451077c19d86ce33dabf4',
+    portable_chart_validation_passed: true,
+    portable_validated_owner_slides: [ 9 ],
+    preserved_existing_workbook_chart_count: 0,
+    preserved_existing_workbook_charts: [],
+    schema_version: 'experimental.literal-chart-workbook-snapshot.v1',
+    source_formula_required_slides: [],
+    source_formulas_preserved: false,
+    source_workbook_preserved: false,
+    source_workbook_required_slides: []
+  }
+}

@@ -1,0 +1,6 @@
+from pathlib import Path
+p=Path('outputs/community-connect/index.html');s=p.read_text(encoding='utf-8-sig')
+s=s.replace("let html=routeMap();","let html=routeMap()+dutyPanel();")
+s=s.replace('function routeMap()', '''function dutyPanel(){if(state.role==='customer')return '';return `<section><h3>Store manager staffing release</h3><p>The store manager decides whether an employee can be spared. Employee route selection and acceptance remain voluntary.</p>${state.duty.map(d=>`<article><b>Employee ${d.employee}: ${d.released?'Released for delivery duty':'Store duty · delivery departure blocked'}</b><p>${esc(d.note)}</p>${state.role==='management'?`<input id="dn${d.employee}" aria-label="Staffing decision reason" placeholder="Store coverage / staffing reason"><button onclick="act('duty',null,{employee:${d.employee},released:${!d.released},note:document.querySelector('#dn${d.employee}').value})">${d.released?'Recall after current delivery':'Release for delivery duty'}</button>`:''}</article>`).join('')}<p class="muted">Release permits acceptance and departure. Recall blocks new acceptance/departure, while an employee already on the road can safely complete the current delivery. No automatic overtime or insurance approval.</p></section>`}
+function routeMap()''')
+p.write_text(s,encoding='utf-8')

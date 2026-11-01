@@ -14,7 +14,7 @@ No third-party packages or internet connection required. The server listens only
 ## Guided demonstration
 
 1. Customer: add a basket worth at least $15, place a paid order and request assistance using a short synthetic transportation-barrier reason.
-2. Manager: approve the application with a rationale. Progress the order through picking, ready, and offer.
+2. Manager: release the employee for delivery duty with a staffing reason, then approve the application with a rationale. Progress the order through picking, ready, and offer.
 3. Driver: finish the seeded active assignment first, then accept the offered order. Release before departure if unavailable, or depart. Enter minutes and miles, confirm safe handoff and on-time status, complete delivery.
 4. Manager: approve the automatically created $2 fuel reward and record simulated issuance. Export the scorecard. Verify the order appears once in the reward ledger.
 5. Neighbor: place an assisted order and see the $0 fee. Manager sees the fund reduce by $4.95. Cancellation before departure restores that reservation.
@@ -31,3 +31,17 @@ The demo uses simple shared credentials and in-memory sessions, no session expir
 
 Run `python test_demo.py` to exercise workflow and authorization using an isolated temporary database. It does not change your demo database.
 
+
+## Radius and employee-added routes
+
+The default radius is five miles. An employee can add a rural or homeward corridor to the delivery map, creating a coverage exception. Customers outside the radius must choose a listed employee-added route. Only the employee who added that route can accept its deliveries. Adding a route does not commit the employee to every order. Safe access, paid duty, insurance, handling and funding still apply.
+
+The map is a synthetic schematic, not live geography. Entered delivery miles act as a simplified radius proxy. Real deployment needs address-to-route validation and separate straight-line radius and road-mile calculations. Two synthetic rural corridors appear at startup. Sign in as driver to add another, then as customer to select it.
+
+## Store manager authority
+
+Only management can release an employee for delivery duty. Both acceptance and departure require that release. Employees cannot release themselves. Recalling an employee blocks new acceptance/departure, while a delivery already in progress can safely finish. Employee route entries do not override this staffing decision.
+
+## Drone roadmap
+
+The architecture plan includes future central drone hubs, with Abingdon as an illustrative location for feasibility review. No aircraft connection, live mission simulation or flight control is implemented. Employee ground delivery remains the functional prototype mode.

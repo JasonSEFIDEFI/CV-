@@ -13,6 +13,7 @@ for line in src.splitlines():
   n=len(line)-len(line.lstrip('#'));parts.append(f'<h{n}>'+html.escape(line[n:].strip())+f'</h{n}>')
  else:parts.append('<p>'+html.escape(line)+'</p>')
 body='\n'.join(parts)
+body=body.replace('<h2>Executive concept</h2>','<figure style="margin:25px 0"><img src="community-connect/assets/family.png" alt="Illustrative happy grocery customers" style="width:100%;max-height:360px;object-fit:cover"><figcaption style="font-size:12px">AI-generated illustration. Fictional people, not actual Food City customers. No endorsement implied.</figcaption></figure><h2>Executive concept</h2>')
 body=re.sub(r'\*\*(.+?)\*\*',r'<b>\1</b>',body)
 body=re.sub(r'(https://[^\s<]+)',r'<a href="\1">\1</a>',body)
 Path('outputs/Architecture-and-Pilot.html').write_text('<!doctype html><html lang="en"><meta charset="utf-8"><title>Community Connect architecture and pilot</title><style>body{font:17px/1.6 system-ui;color:#123269;max-width:1100px;margin:45px auto;padding:0 25px}h1{border-top:12px solid #c92032;padding-top:25px;font-size:40px}h2{color:#c92032;margin-top:42px}table{border-collapse:collapse;width:100%;font-size:15px}td{padding:10px;border-bottom:1px solid #cbd3e2}tr:first-child{background:#123269;color:white;font-weight:bold}a{color:#c92032;overflow-wrap:anywhere}@media print{body{font-size:11pt}h2{break-after:avoid}tr{break-inside:avoid}}</style>'+body+'</html>',encoding='utf-8')
